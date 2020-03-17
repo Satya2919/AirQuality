@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <div id="brandname">
+         Air Quality Index Prediction
+        <div>
+        <h2> Air Quality Index Prediction </h2>
+        </div>
+    <header>
+    
+    <p style="colot:blue;font-size:20;text-align: center;"><b>Results for comment</br>
+    <dic class="results">
+    
+    <h2 style="color:blue;">Air Quality Index Output</h2>
+    
+        <table>
+          <tbody>
+          <th>Air Quality Index</th>
+          {# here we iterate over every item in our list#}
+          {% for item in prediction %}
+              <tr><td>{{ item }}</td></tr>
+          {% endfor %}
+          </tbody>
+          
+         </table>
+        
+        </div>
+          
+   
+    
+</body>
+</html>
